@@ -1,25 +1,13 @@
 # Spectral_EGR
 
-# Test_SBM
-This file provides the codes of our proposed testing methods in "Testing the Stochastic Block Models Based on Maximum Sampling Entry-Wise Deviations".
+This folder contains the code for the spectral inference method proposed in "A Spectral Inference Method for Determining the Number of Communities in Networks".
 
-Test_I contains the codes for testing hypothesis (I)：
-"Simu_Main.m": The central script orchestrating the simulation process, calling other functions as needed.
-"Generating.m": Responsible for generating network data based on predefined parameters and models.
-"MLE.m": Computes the maximum likelihood estimators for the edge probability matrix $Q$ and the entry-wise deviations $\rho_{iv}$.
-"SP_kmeans": Implements spectral clustering to estimate the membership vector $g$.
-"Zhang_Aug.m": Calculates the augmented test statistic proposed by Hu et al. (2021).
-"Zhang_AugBoot.m": Computes the bootstrap-corrected augmented test statistic introduced by Hu et al. (2021).
-"Proposed.m": Implements the proposed test statistic $T_n$.
-"Proposed_Boot.m": Computes the proposed bootstrap-corrected test statistic $T_{n,boot}$
-"Proposed_AugBoot.m": Computes the proposed bootstrap-corrected augmented test statistic $T_{n,boot}^+$.
+DCBM: Includes the code for hypothesis testing under both Stochastic Block Model and Degree-Corrected Stochastic Block Model.
+"Simu_Table*.m": The main script responsible for coordinating the simulation process for the corresponding table in the main paper, calling various supporting functions.
 
+DCMM: Includes the code for hypothesis testing under the Degree-Corrected Mixed Membership Model.
+"Simu_Table*.m": The main script that manages the simulation process for the respective table in the main paper, invoking supporting functions as needed.
 
-Test_II contains the codes for testing hypothesis (II):
-"Simu_Main.m": Serves as the primary script coordinating the simulation process and invoking other supporting functions as required.
-"Generating.m": Generates network data using predefined parameters and models.
-"Corrupted_Zhang.m": Calculates the test statistic proposed by Hu et al. (2021), considering z% corruption in the membership vector 
-$g$ (z=0,5,10).
-"Corrupted_Zhang_AugBoot.m": Computes the bootstrap-corrected augmented test statistic by Hu et al. (2021), incorporating z% corruption in $g$.
-"Corrupted_Proposed.m": Implements the proposed test statistic $T_n$ while accounting for z% corruption in $g$ corrupted.
-"Corrupted_Proposed_AugBoot.m": Computes the proposed bootstrap-corrected augmented test statistic $T_{n,boot}^+$, considering z% corruption in $g$.
+"Figure_S*.R": The main script for generating the figures in the supplementary material.
+
+"Kmax_selection.R": The script implements Algorithm S.1 from the supplement for selecting the practical value of $K_{\max}$.
