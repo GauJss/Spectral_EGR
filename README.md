@@ -14,3 +14,5 @@ DCMM: Includes the code for hypothesis testing under the Degree-Corrected Mixed 
 "Figure_S*.R": The main script for generating the figures in the supplementary material.
 
 "Kmax_selection.R": The script implements Algorithm S.1 from the supplement for selecting the practical value of $K_{\max}$.
+
+Real data: Real data: Contains three public network datasets analyzed in the paper, along with the main scripts for each analysis. These scripts call the same utility functions in the DCBM folder.
